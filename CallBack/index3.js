@@ -7,10 +7,9 @@
  * được kết quả bao nhiêu thì push vào array khai báo ở trên
  * - Trả về result array
  */
-
 function transform(arr, callBack){
 	var result = [];
-	for(var i  = 0 ; i < arr.length; i ++){
+	for(var i = 0 ; i < arr.length; i ++){
 		result.push(callBack(arr[i]));
 	}
 	return result;
@@ -20,4 +19,4 @@ function double(num){
 	return num*2;
 }
 
-console.log(transform([2,4,6], double));
+console.log(transform([2,3,4], double));

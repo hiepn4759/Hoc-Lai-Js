@@ -8,7 +8,7 @@
 function double(num){
 	return num*2;
 }
-function submAndDo(arr, callBack){
+function sumAndDo(arr, callBack){
 	var sum = 0;
 	for(var i = 0 ; i < arr.length ; i ++){
 		sum += arr[i];
@@ -16,4 +16,5 @@ function submAndDo(arr, callBack){
 	return callBack(sum);
 }
 
-console.log(submAndDo([1,2,3],double));
+var kq = sumAndDo([1,2,3], double);
+console.log(kq);
